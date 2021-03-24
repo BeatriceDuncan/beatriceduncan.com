@@ -222,11 +222,12 @@ html body {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   font-size: 3rem;
+  cursor: default;
 }
 
 html body .wrapper {
   max-width: 1200px;
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
 }
 
@@ -244,7 +245,7 @@ html body .flex {
 html body p {
   font-size: 1.6rem;
   line-height: 2rem;
-  padding: 15px 0;
+  padding: 12px 0;
 }
 
 html body a {
@@ -274,6 +275,7 @@ html body h3 {
   width: 100%;
   text-align: center;
   font-size: 5.5rem;
+  font-weight: 200;
 }
 
 html body section {
@@ -342,6 +344,10 @@ nav li:hover {
   width: 50%;
 }
 
+.about {
+  height: 100vh;
+}
+
 .about a {
   margin: 20px;
   padding: 20px 25px;
@@ -368,7 +374,8 @@ nav li:hover {
 }
 
 .skills {
-  padding-top: 40px;
+  height: 100vh;
+  padding-top: 100px;
 }
 
 .skills h3 {
@@ -416,16 +423,85 @@ nav li:hover {
   padding: 0;
 }
 
+.projects {
+  padding-top: 100px;
+}
+
+.project {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 90px 0;
+}
+
+.project .projectImage,
+.project .projectInfo {
+  width: calc(50% - 25px);
+}
+
+.project .credits {
+  text-decoration: underline;
+  -webkit-transition: ease-in-out 0.15s all;
+  transition: ease-in-out 0.15s all;
+}
+
+.project .credits:hover {
+  color: #E1AD01;
+}
+
+.project ul {
+  margin: 10px auto;
+  padding-right: 15px;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project ul .projectSkill {
+  width: 40px;
+  margin: 10px;
+}
+
+.project .projectLinks {
+  padding: 0;
+  margin: 0 auto;
+  font-size: 2.4rem;
+  font-weight: 200;
+  -webkit-text-emphasis: bold;
+          text-emphasis: bold;
+  line-height: 1rem;
+}
+
+.project .projectLinks a {
+  margin: 0 10px;
+  padding: 25px;
+}
+
+.project .projectLinks a:hover {
+  background: url("/assets/scribbles/purplePop.png") center/contain no-repeat;
+  font-weight: 300;
+}
+
 .contact h3 {
   text-align: left;
 }
 
 .contact p {
   line-height: 1rem;
+  padding: 15px 0;
 }
 
 .contact a {
   text-decoration: underline;
+  -webkit-transition: ease-in-out 0.15s all;
+  transition: ease-in-out 0.15s all;
+}
+
+.contact a:hover {
+  color: #E1AD01;
 }
 
 .contactLinks {
@@ -438,11 +514,11 @@ nav li:hover {
 
 .contactLinks li {
   margin-right: 10px;
-  padding: 3px;
+  padding: 8px;
 }
 
 .contactLinks li:hover {
-  background: url("/assets/scribbles/greenScribble.png") center/contain no-repeat;
+  background: url("/assets/scribbles/yellowPop.png") center/contain no-repeat;
 }
 
 .contactLinks li img {

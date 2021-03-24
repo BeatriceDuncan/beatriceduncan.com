@@ -40,6 +40,7 @@ nav {
 }
 
 .about {
+  height: 100vh;
   a {
     margin: 20px;
     padding: 20px 25px;
@@ -63,7 +64,8 @@ nav {
 }
 
 .skills {
-  padding-top: 40px;
+  height: 100vh;
+  padding-top: 100px;
   h3 {
     padding: 5px;
     background: url('/assets/scribbles/blueZigZag.png') center / contain no-repeat;
@@ -100,15 +102,67 @@ nav {
   }
 }
 
+.projects {
+  padding-top: 100px;
+}
+
+.project {
+  justify-content: space-between;
+  margin: 90px 0;
+  .projectImage,
+  .projectInfo {
+    width: calc(50% - 25px);
+  }
+  .credits {
+    text-decoration: underline;
+    transition: ease-in-out 0.15s all;
+    &:hover {
+      color: $kowhai;
+    }
+  }
+  ul {
+    margin: 10px auto;
+    padding-right: 15px;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .projectSkill {
+      width: 40px;
+      margin: 10px;
+    }
+  }
+  .projectLinks {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    font-weight: 200;
+    text-emphasis: bold;
+    line-height: 1rem;
+    a {
+      margin: 0 10px;
+      padding: 25px;
+      &:hover {
+        background: url('/assets/scribbles/purplePop.png') center / contain no-repeat;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
 .contact {
   h3 {
     text-align: left;
   }
   p {
     line-height: 1rem;
+    padding: 15px 0;
   }
   a {
     text-decoration: underline;
+    transition: ease-in-out 0.15s all;
+    &:hover {
+      color: $kowhai;
+    }
   }
 }
 
@@ -118,9 +172,9 @@ nav {
   justify-content: flex-start;
   li {
     margin-right: 10px;
-    padding: 3px;
+    padding: 8px;
     &:hover {
-      background: url('/assets/scribbles/greenScribble.png') center / contain no-repeat;
+      background: url('/assets/scribbles/yellowPop.png') center / contain no-repeat;
     }
     img {
       width: 45px;
