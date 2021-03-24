@@ -1,19 +1,13 @@
-.carousel-wrapper {
-  width: 90%;
-
-  .carousel-content {
+.carousel-content {
     position: absolute;
     top: 0;
-    width: 100vw;
     margin: 0 auto;
     z-index: 40;
   }
   .fixed {
     position: relative;
-    width: 100vw;
     z-index: 50;
   }
-}
 
 // header {
 //   background: url(/assets/carouselPop.jpg) center / cover;

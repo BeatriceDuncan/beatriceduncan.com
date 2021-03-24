@@ -6,10 +6,9 @@ html {
     font-weight: 200;
     font-size: 3rem;
     cursor: default;
-
     .wrapper {
       max-width: 1200px;
-      width: 65%;
+      width: 70%;
       margin: 0 auto;
     }
     .flex {
@@ -46,8 +45,13 @@ html {
       font-size: 5.5rem;
       font-weight: 200;
     }
+    h5 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin: 15px auto;
+    }
     section {
-      margin: 120px 0;
+      padding-top: 100px;
     }
     .squiggle  {
       z-index: -10;

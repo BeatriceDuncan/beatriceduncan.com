@@ -15,32 +15,31 @@ nav {
     padding: 15px;
     &:hover {
       background: url(/assets/scribbles/orangeZigZag.png) center / contain no-repeat;
+      &:first-of-type {
+        transition: all ease-in-out 0.25;
+        background: none;
+        color: $whero;
+        width: 40px;
+      }
     }
   }
-  // STRETCH GOAL: random colour stripe as you scroll past / different stripe on hover?
+  .pageTop {
+    // STRETCH GOAL: make visible only when header is out of view
+    font-size: 5rem;
+    line-height: 0rem;
+  }
+  // STRETCH GOAL: random colour scribble as you scroll past / different stripe on hover?
 }
 
 // MAIN STYLING
 
-.about,
-.contactContainer {
-  justify-content: space-evenly;
-  flex-direction: row;
-}
-
-.aboutImage,
-.contactImage {
-  justify-content: space-evenly;
-  width: 35%;
-}
-
-.aboutInfo,
-.contactInfo {
-  width: 50%;
-}
-
 .about {
-  height: 100vh;
+  justify-content: space-evenly;
+  height: 80vh;
+  .aboutImage {
+    justify-content: space-evenly;
+    width: 35%;
+  }
   a {
     margin: 20px;
     padding: 20px 25px;
@@ -52,20 +51,21 @@ nav {
   }
   .aboutInfo {
     position: relative;
+    width: 50%;
   }
   .squiggle  {
-    height: 200px;
-    left: -37%;
-    top: -18%;
+    height: 150px;
+    left: -180px;
+    top: -60px;
   }
   h3 {
     text-align: left;
+    margin-bottom: 20px;
   }
 }
 
 .skills {
-  height: 100vh;
-  padding-top: 100px;
+  height: 90vh;
   h3 {
     padding: 5px;
     background: url('/assets/scribbles/blueZigZag.png') center / contain no-repeat;
@@ -103,22 +103,10 @@ nav {
 }
 
 .projects {
-  padding-top: 100px;
-}
-
-.project {
-  justify-content: space-between;
-  margin: 90px 0;
-  .projectImage,
-  .projectInfo {
-    width: calc(50% - 25px);
-  }
-  .credits {
-    text-decoration: underline;
-    transition: ease-in-out 0.15s all;
-    &:hover {
-      color: $kowhai;
-    }
+  position: relative;
+  .squiggle  {
+    height: 150px;
+    top: 60px;
   }
   ul {
     margin: 10px auto;
@@ -139,7 +127,6 @@ nav {
     text-emphasis: bold;
     line-height: 1rem;
     a {
-      margin: 0 10px;
       padding: 25px;
       &:hover {
         background: url('/assets/scribbles/purplePop.png') center / contain no-repeat;
@@ -149,15 +136,17 @@ nav {
   }
 }
 
-.contact {
-  h3 {
-    text-align: left;
+.project {
+  justify-content: space-between;
+  margin: 90px 30px;
+  &:last-of-type {
+    margin: 90px 30px 40px 30px;
   }
-  p {
-    line-height: 1rem;
-    padding: 15px 0;
+  .projectImage,
+  .projectInfo {
+    width: calc(50% - 25px);
   }
-  a {
+  .credits {
     text-decoration: underline;
     transition: ease-in-out 0.15s all;
     &:hover {
@@ -166,19 +155,71 @@ nav {
   }
 }
 
-.contactLinks {
-  margin: 10px 0 0 -10px;
-  width: 60%;
-  justify-content: flex-start;
-  li {
-    margin-right: 10px;
-    padding: 8px;
-    &:hover {
-      background: url('/assets/scribbles/yellowPop.png') center / contain no-repeat;
+.worksInProgress {
+  justify-content: space-evenly;
+  h3 {
+    padding: 25px;
+    font-size: 4rem;
+    background: url(/assets/scribbles/pinkZigZag.png) center / contain no-repeat;
+  }
+  p {
+    text-align: center;
+  }
+  .progressProject {
+    width: 40%;
+    margin: 50px 10px;
+    ul {
+      padding: unset;
+      margin: unset;
     }
-    img {
-      width: 45px;
-      padding: 5px;
+    .projectLinks {
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+}
+
+.contact {
+  margin-bottom: 50px;
+  .contactImage {
+    width: 45%;
+  }
+  .contactInfo {
+    position: relative;
+    h3 {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .squiggle {
+      height: 90px;
+      right: 100px;
+      top: -20px;
+    }
+    p {
+      line-height: 1rem;
+      padding: 15px 0;
+    }
+    a {
+      text-decoration: underline;
+      transition: ease-in-out 0.15s all;
+      &:hover {
+        color: $kowhai;
+      }
+    }
+  }
+  .contactLinks {
+    margin: 10px 0 0 -10px;
+    justify-content: flex-start;
+    li {
+      margin-right: 10px;
+      padding: 8px;
+      &:hover {
+        background: url('/assets/scribbles/yellowPop.png') center / contain no-repeat;
+      }
+      img {
+        width: 45px;
+        padding: 5px;
+      }
     }
   }
 }

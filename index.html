@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beatrice Duncan</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
       rel="stylesheet"
@@ -21,50 +20,30 @@
     </style>
   </head>
   <body>
-    <header>
-      <!-- <div class="bannerText flex">
-        <h1 class="flex">
-          <span class="letterB">B</span>
-          <span class="letterE1">e</span>
-          <span class="letterA1">a</span>
-          <span class="letterT">t</span>
-          <span class="letterR">r</span>
-          <span class="letterI">i</span>
-          <span class="letterC">c</span>
-          <span class="letterE2">e</span>
-          <span class="space"></span>
-          <span class="letterD">D</span>
-          <span class="letterU">u</span>
-          <span class="letterN1">n</span>
-          <span class="letterC2">c</span>
-          <span class="letterA2">a</span>
-          <span class="letterN2">n</span>
-        </h1>
-        <h2>Front-End Web Developer</h2>
-      </div> -->
-      <div class="carousel-wrapper" aria-hidden="true">
-        <div class="carousel">
-          <div class="nameTagline"></div>
-          <!-- STRETCH GOAL - SLIDER CAROUSEL -->
-          <img
-            class="carousel-content fixed"
-            src="./assets/carouselName.png"
-            alt="Portfolio of Beatrice Duncan"
-          />
-          <img
-            class="carousel-content slide"
-            src="./assets/carouselSpace.jpg"
-            aria-hidden="true"
-          />
-          <img
-            class="carousel-content slide"
-            src="./assets/carouselPop.jpg"
-            aria-hidden="true"
-          />
-        </div>
+    <header id="home">
+      <!-- vvv DIFFERENT OPTION FOR NAME & A11Y BEST PRAC vvv-->
+      <div class="carousel">
+        <div class="nameTagline"></div>
+        <!-- STRETCH GOAL: Have a click & drag tab to change the background pattern but keep name & tagline fixed -->
+        <img
+          class="carousel-content fixed"
+          src="./assets/carouselName.png"
+          alt="Portfolio of Beatrice Duncan"
+        />
+        <img
+          class="carousel-content slide"
+          src="./assets/carouselSpace.jpg"
+          aria-hidden="true"
+        />
+        <img
+          class="carousel-content slide"
+          src="./assets/carouselPop.jpg"
+          aria-hidden="true"
+        />
       </div>
       <nav>
         <ul>
+          <li><a class="pageTop" href="#home">^</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -72,7 +51,7 @@
         </ul>
       </nav>
     </header>
-    <!-- END OF HEADER -->
+
     <main>
       <div class="wrapper">
         <!-- ABOUT SECTION -->
@@ -92,32 +71,17 @@
             />
             <h3>About Me</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              odit adipisci perspiciatis quasi ab veritatis, non dolorum
-              dignissimos, ipsum totam rem enim cupiditate? Rem nisi earum
-              similique voluptatum numquam accusamus mollitia ab repellendus
-              laborum ullam.
+              I'm a fresh front-end coding convert who has a New Zealand accent and lives in Toronto. I made my way into tech via almost a decade of elementary teaching experience & my various leadership roles in edutech. 
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
-              dignissimos aliquid commodi facilis quo perspiciatis pariatur
-              similique dolor odio esse, a nostrum debitis sed, omnis totam
-              atque. Consequatur quod eveniet iure, error labore consequuntur
-              aut obcaecati tempore suscipit, sunt aliquam.
+              Between the permanent move across the Pacific and this exciting career pivot into tech, I have grit & tenacity pouring out of my pockets.
             </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
-              temporibus assumenda a dicta, distinctio voluptas obcaecati culpa
-              exercitationem dolore laudantium qui possimus, atque aliquid.
-              Quisquam.
-            </p>
+            <p>It's my passion for human connection and the empowerment of under-resourced communities that fuels me to build efficient and intuitive sites.</p>
           </div>
         </section>
-        <!-- END OF ABOUT SECTION -->
 
         <!-- SKILLS SECTION -->
         <section class="skills" id="skills">
-          <!-- <img class="squiggle" src="./assets/scribbles/blueZigZag.png" aria-hidden="true"> -->
           <h3>Skills</h3>
           <ul class="skillsGrid">
             <li class="skillBox">
@@ -218,11 +182,15 @@
             </li>
           </ul>
         </section>
-        <!-- END OF SKILLS SECTION -->
 
         <!-- PROJECTS SECTION -->
         <section class="projects" id="projects">
           <h3>Projects</h3>
+          <img
+            class="squiggle"
+            src="/assets/scribbles/greenScribble.png"
+            aria-hidden="true"
+          />
           <!-- WriteOn -->
           <div class="project flex">
             <img
@@ -239,11 +207,26 @@
                 writing prompt. Users can submit their own prompt ideas to the
                 database too. Writers can develop their practice by setting a
                 goal timer which congratulates them when they achieve their
-                goal.
-                Made with
-                <a class="credits" href="https://github.com/mortultra" target="_blank">Andrew Campbell</a>,
-                <a class="credits" href="https://github.com/amybradford" target="_blank">Amy Bradford</a> &
-                <a class="credits" href="https://github.com/gssanjose" target="_blank">Glen San Jose</a>.
+                goal. Made with
+                <a
+                  class="credits"
+                  href="https://github.com/mortultra"
+                  target="_blank"
+                  >Andrew Campbell</a
+                >,
+                <a
+                  class="credits"
+                  href="https://github.com/amybradford"
+                  target="_blank"
+                  >Amy Bradford</a
+                >
+                &
+                <a
+                  class="credits"
+                  href="https://github.com/gssanjose"
+                  target="_blank"
+                  >Glen San Jose</a
+                >.
               </p>
               <ul class="flex">
                 <li class="projectSkill">
@@ -267,8 +250,10 @@
               </ul>
               <p class="projectLinks flex">
                 <a href="https://write-on.netlify.app/" target="_blank">LIVE</a>
-                  |     
-                <a href="https://github.com/BeAnGlAm/WriteOn" target="_blank">GIT</a>
+                |
+                <a href="https://github.com/BeAnGlAm/WriteOn" target="_blank"
+                  >GIT</a
+                >
               </p>
             </div>
           </div>
@@ -276,48 +261,79 @@
           <div class="project flex">
             <div class="projectInfo flex">
               <h4>littlewins</h4>
-              <p>This mental health app encourages users to track & celebrate the small achievements that often go unnoticed. The user enters their own indentifier for each day and three littlewins. On submit, this group of four user inputs is pushed to firebase & is rendered on the page as a list. Users are able to add and delete lists at their leisure.</p>
+              <p>
+                This mental health app encourages users to track & celebrate the
+                small achievements that often go unnoticed. The user enters
+                their own indentifier for each day and three littlewins. On
+                submit, this group of four user inputs is pushed to firebase &
+                is rendered on the page as a list. Users are able to add and
+                delete lists at their leisure.
+              </p>
               <ul class="flex">
                 <li class="projectSkill">
                   <img
-                  src="/assets/icons/reactIcon.png"
-                  alt="skills included: react"
+                    src="/assets/icons/reactIcon.png"
+                    alt="skills included: react"
                   />
                 </li>
                 <li class="projectSkill">
                   <img
-                  src="/assets/icons/firebaseIcon.png"
-                  alt="skills included: firebase"
+                    src="/assets/icons/firebaseIcon.png"
+                    alt="skills included: firebase"
                   />
                 </li>
                 <li class="projectSkill">
                   <img
-                  src="/assets/icons/responsiveDesignIcon.png"
-                  alt="skills included: responsive design."
+                    src="/assets/icons/responsiveDesignIcon.png"
+                    alt="skills included: responsive design."
                   />
                 </li>
               </ul>
               <p class="projectLinks flex">
-                <a href="https://littlewinsapp.netlify.app/" target="_blank">LIVE</a>
-                |     
-                <a href="https://github.com/BeatriceDuncan/littlewins" target="_blank">GIT</a>
+                <a href="https://littlewinsapp.netlify.app/" target="_blank"
+                  >LIVE</a
+                >
+                |
+                <a
+                  href="https://github.com/BeatriceDuncan/littlewins"
+                  target="_blank"
+                  >GIT</a
+                >
               </p>
             </div>
-            <img class="projectImage" src="/assets/projects/littlewins.png" alt="Mockup of the littleWins app as displayed on a Mac Monitor & an iPhone.">
+            <img
+              class="projectImage"
+              src="/assets/projects/littlewins.png"
+              alt="Mockup of the littleWins app as displayed on a Mac Monitor & an iPhone."
+            />
           </div>
           <!-- May The Forest Be With You -->
           <div class="project flex">
-            <img class="projectImage" src="/assets/projects/mayTheForest.png" alt="Mockup of May The Forest Be With You app as displayed on a Macbook Air and an iPhone.">
+            <img
+              class="projectImage"
+              src="/assets/projects/mayTheForest.png"
+              alt="Mockup of May The Forest Be With You app as displayed on a Macbook Air and an iPhone."
+            />
             <div class="projectInfo flex">
               <h4>May The Forest Be With You</h4>
-              <p>This app teaches the you about native trees of the Canadian Proviences. It takes a user selection value and dynamically passes it to the API URL, then displays a selection of random trees from that provience. If the user clicks on an image they are able to see the scientific name of that plant. Made with 
-                <a class="credits" href="https://codelikemike.dev" target="_blank">Michael Campbell</a>.
+              <p>
+                This app teaches the you about native trees of the Canadian
+                Provinces. It takes a user selection value and dynamically
+                passes it to the API URL, then displays a selection of random
+                trees from that provience. If the user clicks on an image they
+                are able to see the scientific name of that plant. Made with
+                <a
+                  class="credits"
+                  href="https://codelikemike.dev"
+                  target="_blank"
+                  >Michael Campbell</a
+                >.
               </p>
               <ul class="flex">
                 <li class="projectSkill">
                   <img
-                  src="/assets/icons/javascriptIcon.png"
-                  alt="skills included: vanilla JavaScript"
+                    src="/assets/icons/javascriptIcon.png"
+                    alt="skills included: vanilla JavaScript"
                   />
                 </li>
                 <li class="projectSkill">
@@ -334,53 +350,211 @@
                 </li>
               </ul>
               <p class="projectLinks flex">
-                <a href="https://write-on.netlify.app/" target="_blank">LIVE</a>
-                  |     
-                <a href="https://github.com/BeAnGlAm/WriteOn" target="_blank">GIT</a>
+                <a
+                  href="https://beatriceduncan.github.io/mayTheForestBeWithYou"
+                  target="_blank"
+                  >LIVE</a
+                >
+                |
+                <a
+                  href="https://github.com/BeatriceDuncan/mayTheForestBeWithYou"
+                  target="_blank"
+                  >GIT</a
+                >
               </p>
             </div>
           </div>
           <!-- Boat Ride Adventures-->
           <div class="project flex">
-            <img class="projectImage" src="/assets/projects/boatRide.png" alt="Mockup of the Boat Ride Adventures app as displayed on a Macbook monitor and an iPad.">
             <div class="projectInfo flex">
-              <h4>WriteOn</h4>
-              <p>about 
-                Made with 
-                <a class="credits" href="https://github.com/mortultra" target="_blank">Andrew Campbell</a>
+              <h4>Boat Ride Adventures</h4>
+              <p>
+                This multi-page site is full bleed and fully responsive. It is
+                made from a PSD supplied by the 'client' and fetures a blog and
+                a contact page. Made with
+                <a
+                  class="credits"
+                  href="https://github.com/fthiesen"
+                  target="_blank"
+                  >Fernanda Thiesen</a
+                >.
               </p>
               <ul class="flex">
                 <li class="projectSkill">
                   <img
-                    src="/assets/icons/gitBranchingIcon.png"
-                    alt="skills included: git branching"
+                    src="/assets/icons/sassIcon.png"
+                    alt="skills included: Sass."
+                  />
+                </li>
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/responsiveDesignIcon.png"
+                    alt="skills included: responsiveDesignIcon."
+                  />
+                </li>
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/accessibilityIcon.png"
+                    alt="skills included: Accessibility best practise."
                   />
                 </li>
               </ul>
               <p class="projectLinks flex">
-                <a href="https://write-on.netlify.app/" target="_blank">LIVE</a>
-                  |     
-                <a href="https://github.com/BeAnGlAm/WriteOn" target="_blank">GIT</a>
+                <a
+                  href="https://fernanda-bea.github.io/fernanda-beatrice-project-one/"
+                  target="_blank"
+                  >LIVE</a
+                >
+                |
+                <a
+                  href="https://github.com/fernanda-bea/fernanda-beatrice-project-one"
+                  target="_blank"
+                  >GIT</a
+                >
+              </p>
+            </div>
+            <img
+              class="projectImage"
+              src="/assets/projects/boatRide.png"
+              alt="Mockup of the Boat Ride Adventures app as displayed on a Macbook monitor and an iPad."
+            />
+          </div>
+          <!-- WORKS IN PROGRESS -->
+          <!--STRETCH GOAL: Make into a carousel-->
+          <div class="worksInProgress flex">
+            <h3>Works in progress...</h3>
+            <!-- Valentines Day
+            <div class="progressProject">
+              <img
+                src="assets/projects/valentineMacbook.png"
+                alt="Mockup of Valentines Day App as displayed on a Macbook Air"
+              />
+              <h5>Valentines / Pal-entines</h5>
+              <p>
+                Traversing the DOM to send a love-note to someone you care
+                about.
+              </p>
+              <ul class="flex">
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/javascriptIcon.png"
+                    alt="skills included: javaScript."
+                  />
+                </li>
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/htmlIcon.png"
+                    alt="skills included: HTML."
+                  />
+                </li>
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/cssIcon.png"
+                    alt="skills included: css."
+                  />
+                </li>
+              </ul>
+              <p class="projectLinks">
+                <a href="https://beatriceduncan.github.io/valentines-day/"
+                  target="_blank">LIVE</a>
+                |
+                <a href="https://github.com/BeatriceDuncan/valentines-day"
+                  target="_blank">GIT</a>
+              </p>
+            </div> -->
+            <!-- Monster Squad -->
+            <div class="progressProject">
+              <img
+                src="assets/projects/monsterSquadMacbook.png"
+                alt="Mockup of Monster Squad App as displayed on a Macbook Air"
+              />
+              <h5>Monster Squad</h5>
+              <p>
+                This app uses jQuery to traverse the D&D API and filter Monsters by challenge rating.
+              </p>
+              <ul class="flex">
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/restfulApiIcon.png"
+                    alt="skills included: javaScript."
+                  />
+                </li>
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/jqueryIcon.png"
+                    alt="skills included: HTML."
+                  />
+                </li>
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/cssIcon.png"
+                    alt="skills included: css."
+                  />
+                </li>
+              </ul>
+              <p class="projectLinks">
+                <a href="https://beatriceduncan.github.io/monsterSquad/"
+                  target="_blank">LIVE</a>
+                |
+                <a href="https://github.com/BeatriceDuncan/monsterSquad"
+                  target="_blank">GIT</a>
+              </p>
+            </div>
+            <!-- Thought That Counts -->
+            <div class="progressProject">
+              <img
+                src="assets/projects/ttcMacbook.png"
+                alt="Mockup of thought that counts app as displayed on a Macbook Air"
+              />
+              <h5>Thought That Counts</h5>
+              <p>
+                This app uses a simple jQuery onClick toggle to help users keep track of gift ideas.
+              </p>
+              <ul class="flex">
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/jqueryIcon.png"
+                    alt="skills included: jQuery."
+                  />
+                </li>
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/htmlIcon.png"
+                    alt="skills included: HTML."
+                  />
+                </li>
+                <li class="projectSkill">
+                  <img
+                    src="/assets/icons/cssIcon.png"
+                    alt="skills included: css."
+                  />
+                </li>
+              </ul>
+              <p class="projectLinks">
+                <a href="https://beatriceduncan.github.io/thoughtThatCounts"
+                  target="_blank">LIVE</a>
+                |
+                <a href="https://github.com/BeatriceDuncan/thoughtThatCounts"
+                  target="_blank">GIT</a>
               </p>
             </div>
           </div>
-          <h3>Works in progress...</h3>
-          <!--STRETCH GOAL: Make into a carousel-->
-          <!-- Monster Squad -->
-          <!-- Valentines Day -->
-          <!-- Thought That Counts -->
         </section>
-        <!-- END OF PROJECTS SECTION -->
 
         <!-- CONTACT SECTION -->
         <section class="contact" id="contact">
           <div class="contactContainer flex">
             <img
-              class="contactImage"
-              src="./assets/bigMe.png"
-              alt="Collage self portrait of Beatrice Duncan working in her home-office."
+            class="contactImage"
+            src="./assets/bigMe.png"
+            alt="Collage self portrait of Beatrice Duncan working in her home-office."
             />
             <div class="contactInfo">
+              <img
+                  class="squiggle"
+                  src="/assets/scribbles/plumScribble.png"
+                  aria-hidden="true"
+                />
               <h3>Contact</h3>
               <p>Feeling curious about something?</p>
               <p>Think I might be a good fit for a position?</p>
@@ -446,17 +620,14 @@
             </div>
           </div>
         </section>
-        <!-- END OF CONTACT SECTION -->
       </div>
       <!-- END OF WRAPPER -->
     </main>
-    <!-- END OF MAIN -->
 
     <footer>
       <img src="/assets/name.jpg" alt="Made by Beatrice Duncan" />
       <p>© 2021</p>
     </footer>
-    <!-- END OF FOOTER -->
 
     <script src="script.js"></script>
     <script

@@ -227,7 +227,7 @@ html body {
 
 html body .wrapper {
   max-width: 1200px;
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -278,8 +278,14 @@ html body h3 {
   font-weight: 200;
 }
 
+html body h5 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 15px auto;
+}
+
 html body section {
-  margin: 120px 0;
+  padding-top: 100px;
 }
 
 html body .squiggle {
@@ -288,21 +294,15 @@ html body .squiggle {
   position: absolute;
 }
 
-.carousel-wrapper {
-  width: 90%;
-}
-
-.carousel-wrapper .carousel-content {
+.carousel-content {
   position: absolute;
   top: 0;
-  width: 100vw;
   margin: 0 auto;
   z-index: 40;
 }
 
-.carousel-wrapper .fixed {
+.fixed {
   position: relative;
-  width: 100vw;
   z-index: 50;
 }
 
@@ -320,32 +320,31 @@ nav li:hover {
   background: url(/assets/scribbles/orangeZigZag.png) center/contain no-repeat;
 }
 
-.about,
-.contactContainer {
+nav li:hover:first-of-type {
+  -webkit-transition: all ease-in-out 0.25;
+  transition: all ease-in-out 0.25;
+  background: none;
+  color: #dc5544;
+  width: 40px;
+}
+
+nav .pageTop {
+  font-size: 5rem;
+  line-height: 0rem;
+}
+
+.about {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  height: 80vh;
 }
 
-.aboutImage,
-.contactImage {
+.about .aboutImage {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 35%;
-}
-
-.aboutInfo,
-.contactInfo {
-  width: 50%;
-}
-
-.about {
-  height: 100vh;
 }
 
 .about a {
@@ -361,21 +360,22 @@ nav li:hover {
 
 .about .aboutInfo {
   position: relative;
+  width: 50%;
 }
 
 .about .squiggle {
-  height: 200px;
-  left: -37%;
-  top: -18%;
+  height: 150px;
+  left: -180px;
+  top: -60px;
 }
 
 .about h3 {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .skills {
-  height: 100vh;
-  padding-top: 100px;
+  height: 90vh;
 }
 
 .skills h3 {
@@ -424,14 +424,58 @@ nav li:hover {
 }
 
 .projects {
-  padding-top: 100px;
+  position: relative;
+}
+
+.projects .squiggle {
+  height: 150px;
+  top: 60px;
+}
+
+.projects ul {
+  margin: 10px auto;
+  padding-right: 15px;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects ul .projectSkill {
+  width: 40px;
+  margin: 10px;
+}
+
+.projects .projectLinks {
+  padding: 0;
+  margin: 0 auto;
+  font-size: 2.4rem;
+  font-weight: 200;
+  -webkit-text-emphasis: bold;
+          text-emphasis: bold;
+  line-height: 1rem;
+}
+
+.projects .projectLinks a {
+  padding: 25px;
+}
+
+.projects .projectLinks a:hover {
+  background: url("/assets/scribbles/purplePop.png") center/contain no-repeat;
+  font-weight: 300;
 }
 
 .project {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 90px 0;
+  margin: 90px 30px;
+}
+
+.project:last-of-type {
+  margin: 90px 30px 40px 30px;
 }
 
 .project .projectImage,
@@ -449,79 +493,92 @@ nav li:hover {
   color: #E1AD01;
 }
 
-.project ul {
-  margin: 10px auto;
-  padding-right: 15px;
-  text-align: center;
+.worksInProgress {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.project ul .projectSkill {
-  width: 40px;
-  margin: 10px;
-}
-
-.project .projectLinks {
-  padding: 0;
-  margin: 0 auto;
-  font-size: 2.4rem;
-  font-weight: 200;
-  -webkit-text-emphasis: bold;
-          text-emphasis: bold;
-  line-height: 1rem;
-}
-
-.project .projectLinks a {
-  margin: 0 10px;
+.worksInProgress h3 {
   padding: 25px;
+  font-size: 4rem;
+  background: url(/assets/scribbles/pinkZigZag.png) center/contain no-repeat;
 }
 
-.project .projectLinks a:hover {
-  background: url("/assets/scribbles/purplePop.png") center/contain no-repeat;
-  font-weight: 300;
+.worksInProgress p {
+  text-align: center;
 }
 
-.contact h3 {
+.worksInProgress .progressProject {
+  width: 40%;
+  margin: 50px 10px;
+}
+
+.worksInProgress .progressProject ul {
+  padding: unset;
+  margin: unset;
+}
+
+.worksInProgress .progressProject .projectLinks {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.contact {
+  margin-bottom: 50px;
+}
+
+.contact .contactImage {
+  width: 45%;
+}
+
+.contact .contactInfo {
+  position: relative;
+}
+
+.contact .contactInfo h3 {
   text-align: left;
+  margin-bottom: 20px;
 }
 
-.contact p {
+.contact .contactInfo .squiggle {
+  height: 90px;
+  right: 100px;
+  top: -20px;
+}
+
+.contact .contactInfo p {
   line-height: 1rem;
   padding: 15px 0;
 }
 
-.contact a {
+.contact .contactInfo a {
   text-decoration: underline;
   -webkit-transition: ease-in-out 0.15s all;
   transition: ease-in-out 0.15s all;
 }
 
-.contact a:hover {
+.contact .contactInfo a:hover {
   color: #E1AD01;
 }
 
-.contactLinks {
+.contact .contactLinks {
   margin: 10px 0 0 -10px;
-  width: 60%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
-.contactLinks li {
+.contact .contactLinks li {
   margin-right: 10px;
   padding: 8px;
 }
 
-.contactLinks li:hover {
+.contact .contactLinks li:hover {
   background: url("/assets/scribbles/yellowPop.png") center/contain no-repeat;
 }
 
-.contactLinks li img {
+.contact .contactLinks li img {
   width: 45px;
   padding: 5px;
 }
