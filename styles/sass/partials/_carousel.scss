@@ -1,0 +1,51 @@
+.carousel-wrapper {
+  width: 90%;
+
+  .carousel-content {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    margin: 0 auto;
+    z-index: 40;
+  }
+  .fixed {
+    position: relative;
+    width: 100vw;
+    z-index: 50;
+  }
+}
+
+// header {
+//   background: url(/assets/carouselPop.jpg) center / cover;
+//   height: 65vh;
+//   .bannerText {
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 65vh;
+//     width: 30%;
+//     margin: 0 auto;
+//   }
+//   h1 {
+//     font-size: 11rem;
+//     text-transform: uppercase;
+//     flex-wrap: nowrap;
+//     .letterB {color: $poroporo;}
+//     .letterE1 {color: $karerarera;}
+//     .letterA1 {color: $kikorangi;}
+//     .letterT {color: $paramu;}
+//     .letterR {color: $kowhai;}
+//     .letterI {color: $pititi;}
+//     .letterC1 {color: $waiporoporo;}
+//     .letterE2 {color: $whero;}
+//     .letterD {color: $karikiuri;}
+//     .letterU {color: $mawhero;}
+//     .letterN1 {color: $karaka;}
+//     .letterC2 {color: $kahurangi;}
+//     .letterA2 {color: $parauri;}
+//     .letterN2 {color: $kakariki;}
+//   }
+//   h2 {
+//     font-size: 4rem;
+//   }
+// }

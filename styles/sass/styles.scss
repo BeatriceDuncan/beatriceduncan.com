@@ -1,0 +1,137 @@
+// IMPORTS
+@import './partials/setup';
+@import './partials/variables';
+@import './partials/mixins';
+@import './partials/globalStyles';
+@import './partials/carousel';
+
+// HEADER STYLING
+
+nav {
+  z-index: 20;
+  position: fixed;
+  li {
+    margin: 5px 20px;
+    padding: 15px;
+    &:hover {
+      background: url(/assets/scribbles/orangeZigZag.png) center / contain no-repeat;
+    }
+  }
+  // STRETCH GOAL: random colour stripe as you scroll past / different stripe on hover?
+}
+
+// MAIN STYLING
+
+.about,
+.contactContainer {
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.aboutImage,
+.contactImage {
+  justify-content: space-evenly;
+  width: 35%;
+}
+
+.aboutInfo,
+.contactInfo {
+  width: 50%;
+}
+
+.about {
+  a {
+    margin: 20px;
+    padding: 20px 25px;
+    background: url(/assets/scribbles/mustardBox.png) center / contain no-repeat;
+    &:hover {
+      background: url(/assets/scribbles/purpleScribble.png) center / contain no-repeat;
+      color: $kowhai;
+    }
+  }
+  .aboutInfo {
+    position: relative;
+  }
+  .squiggle  {
+    height: 200px;
+    left: -37%;
+    top: -18%;
+  }
+  h3 {
+    text-align: left;
+  }
+}
+
+.skills {
+  padding-top: 40px;
+  h3 {
+    padding: 5px;
+    background: url('/assets/scribbles/blueZigZag.png') center / contain no-repeat;
+  }
+  .skillsGrid {
+    width: 60vw;
+    min-width: 580px;
+    max-width: 630px;
+    margin: 20px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 30px;
+    align-items: center;
+    .skillsBox {
+      padding: 20px 0 0 0;
+      font-size: 1.4rem;
+    }
+    .skillsIcon {
+      width: 50px;
+      margin: 15px auto;
+      width: 65px;
+      padding: 10px;
+      &:hover {
+        background: url('/assets/scribbles/orangeScribble.png') center / contain no-repeat;
+      }
+    }
+    p {
+      text-align: center;
+      height: 30px;
+      font-weight: 300;
+      padding: 0;
+    }
+  }
+}
+
+.contact {
+  h3 {
+    text-align: left;
+  }
+  p {
+    line-height: 1rem;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.contactLinks {
+  margin: 10px 0 0 -10px;
+  width: 60%;
+  justify-content: flex-start;
+  li {
+    margin-right: 10px;
+    padding: 3px;
+    &:hover {
+      background: url('/assets/scribbles/greenScribble.png') center / contain no-repeat;
+    }
+    img {
+      width: 45px;
+      padding: 5px;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  img {
+    height: 140px;
+  }
+}
