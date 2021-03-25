@@ -21,10 +21,18 @@
   </head>
   <body>
     <header id="home">
+      <nav>
+        <ul>
+          <li><a class="pageTop" href="#home">^</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
       <!-- vvv DIFFERENT OPTION FOR NAME & A11Y BEST PRAC vvv-->
       <div class="carousel">
         <div class="nameTagline"></div>
-        <!-- STRETCH GOAL: Have a click & drag tab to change the background pattern but keep name & tagline fixed -->
         <img
           class="carousel-content fixed"
           src="./assets/carouselName.png"
@@ -41,15 +49,6 @@
           aria-hidden="true"
         />
       </div>
-      <nav>
-        <ul>
-          <li><a class="pageTop" href="#home">^</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main>
@@ -64,12 +63,14 @@
             <a href="assets/BeatriceDuncanResume.pdf" target="_blank">Résumé</a>
           </div>
           <div class="aboutInfo">
-            <img
-              class="squiggle"
-              src="/assets/scribbles/pinkScribble.png"
-              aria-hidden="true"
-            />
-            <h3>About Me</h3>
+            <div class="aboutHeading">
+              <img
+                class="squiggle"
+                src="/assets/scribbles/pinkScribble.png"
+                aria-hidden="true"
+              />
+              <h3>About Me</h3>
+            </div>
             <p>
               I'm a fresh front-end coding convert who has a New Zealand accent and lives in Toronto. I made my way into tech via almost a decade of elementary teaching experience & my various leadership roles in edutech. 
             </p>
@@ -186,17 +187,12 @@
         <!-- PROJECTS SECTION -->
         <section class="projects" id="projects">
           <h3>Projects</h3>
-          <img
-            class="squiggle"
-            src="/assets/scribbles/greenScribble.png"
-            aria-hidden="true"
-          />
           <!-- WriteOn -->
           <div class="project flex">
             <img
-              class="projectImage"
-              src="/assets/projects/writeOn.png"
-              alt="Mockup of the WriteOn app as displayed on a Macbook Air & an iPad."
+            class="projectImage"
+            src="/assets/projects/writeOn.png"
+            alt="Mockup of the WriteOn app as displayed on a Macbook Air & an iPad."
             />
             <div class="projectInfo flex">
               <h4>WriteOn</h4>
@@ -420,10 +416,9 @@
             />
           </div>
           <!-- WORKS IN PROGRESS -->
-          <!--STRETCH GOAL: Make into a carousel-->
           <div class="worksInProgress flex">
             <h3>Works in progress...</h3>
-            <!-- Valentines Day
+            <!-- NEED TO WORK ON MORE FIRST: Valentines Day
             <div class="progressProject">
               <img
                 src="assets/projects/valentineMacbook.png"
@@ -630,9 +625,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/8b8fad69b5.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

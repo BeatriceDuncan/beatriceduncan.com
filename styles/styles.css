@@ -276,6 +276,8 @@ html body h3 {
   text-align: center;
   font-size: 5.5rem;
   font-weight: 200;
+  margin-bottom: 20px;
+  padding: 5px;
 }
 
 html body h5 {
@@ -307,13 +309,19 @@ html body .squiggle {
 }
 
 nav {
-  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100;
   position: fixed;
+  bottom: 0;
 }
 
 nav li {
-  margin: 5px 20px;
+  margin: 0px 25px;
   padding: 15px;
+}
+
+nav li:nth-of-type(2) {
+  margin-top: -30px;
 }
 
 nav li:hover {
@@ -328,9 +336,18 @@ nav li:hover:first-of-type {
   width: 40px;
 }
 
+nav li:hover:nth-of-type(even) {
+  background: url(/assets/scribbles/orangeZigZag2.png) center/contain no-repeat;
+}
+
 nav .pageTop {
   font-size: 5rem;
-  line-height: 0rem;
+  margin: 0px 20px;
+}
+
+.about h3,
+.contact h3 {
+  text-align: left;
 }
 
 .about {
@@ -354,32 +371,25 @@ nav .pageTop {
 }
 
 .about a:hover {
-  background: url(/assets/scribbles/purpleScribble.png) center/contain no-repeat;
-  color: #E1AD01;
+  background: url(/assets/scribbles/mustardBoxHover.png) center/contain no-repeat;
 }
 
 .about .aboutInfo {
-  position: relative;
   width: 50%;
+  max-width: 375px;
 }
 
-.about .squiggle {
+.about .aboutHeading {
+  position: relative;
+}
+
+.about .aboutHeading .squiggle {
   height: 150px;
-  left: -180px;
+  left: -60px;
   top: -60px;
 }
 
-.about h3 {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.skills {
-  height: 90vh;
-}
-
 .skills h3 {
-  padding: 5px;
   background: url("/assets/scribbles/blueZigZag.png") center/contain no-repeat;
 }
 
@@ -423,13 +433,8 @@ nav .pageTop {
   padding: 0;
 }
 
-.projects {
-  position: relative;
-}
-
-.projects .squiggle {
-  height: 150px;
-  top: 60px;
+.projects h3 {
+  background: url("/assets/scribbles/purpleZigZag.png") center/contain no-repeat;
 }
 
 .projects ul {
@@ -464,10 +469,10 @@ nav .pageTop {
 
 .projects .projectLinks a:hover {
   background: url("/assets/scribbles/purplePop.png") center/contain no-repeat;
-  font-weight: 300;
 }
 
 .project {
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -500,9 +505,9 @@ nav .pageTop {
 }
 
 .worksInProgress h3 {
-  padding: 25px;
   font-size: 4rem;
-  background: url(/assets/scribbles/pinkZigZag.png) center/contain no-repeat;
+  background: url("/assets/scribbles/orangeSquiggleTr.png") center/contain no-repeat;
+  padding: 20px;
 }
 
 .worksInProgress p {
@@ -536,14 +541,9 @@ nav .pageTop {
   position: relative;
 }
 
-.contact .contactInfo h3 {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
 .contact .contactInfo .squiggle {
-  height: 90px;
-  right: 100px;
+  height: 100px;
+  left: -90px;
   top: -20px;
 }
 

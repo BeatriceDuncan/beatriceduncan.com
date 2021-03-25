@@ -8,11 +8,16 @@
 // HEADER STYLING
 
 nav {
-  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100;
   position: fixed;
+  bottom: 0;
   li {
-    margin: 5px 20px;
+    margin: 0px 25px;
     padding: 15px;
+    &:nth-of-type(2){
+      margin-top: -30px;
+    }
     &:hover {
       background: url(/assets/scribbles/orangeZigZag.png) center / contain no-repeat;
       &:first-of-type {
@@ -21,17 +26,25 @@ nav {
         color: $whero;
         width: 40px;
       }
+      &:nth-of-type(even){
+        background: url(/assets/scribbles/orangeZigZag2.png) center / contain no-repeat;
+      }
     }
   }
   .pageTop {
-    // STRETCH GOAL: make visible only when header is out of view
+    // TODO: STRETCH GOAL: make visible only when header is out of view
     font-size: 5rem;
-    line-height: 0rem;
+    margin: 0px 20px;
   }
-  // STRETCH GOAL: random colour scribble as you scroll past / different stripe on hover?
+  // TODO: STRETCH GOAL: random colour scribble as you scroll past / different stripe on hover?
 }
 
 // MAIN STYLING
+
+.about h3,
+.contact h3 {
+  text-align: left;
+}
 
 .about {
   justify-content: space-evenly;
@@ -45,29 +58,26 @@ nav {
     padding: 20px 25px;
     background: url(/assets/scribbles/mustardBox.png) center / contain no-repeat;
     &:hover {
-      background: url(/assets/scribbles/purpleScribble.png) center / contain no-repeat;
-      color: $kowhai;
+      background: url(/assets/scribbles/mustardBoxHover.png) center / contain no-repeat;
+      // color: $kowhai;
     }
   }
   .aboutInfo {
-    position: relative;
     width: 50%;
+    max-width: 375px;
   }
-  .squiggle  {
-    height: 150px;
-    left: -180px;
-    top: -60px;
-  }
-  h3 {
-    text-align: left;
-    margin-bottom: 20px;
+  .aboutHeading {
+    position: relative;
+    .squiggle  {
+      height: 150px;
+      left: -60px;
+      top: -60px;
+    }
   }
 }
 
 .skills {
-  height: 90vh;
   h3 {
-    padding: 5px;
     background: url('/assets/scribbles/blueZigZag.png') center / contain no-repeat;
   }
   .skillsGrid {
@@ -103,10 +113,8 @@ nav {
 }
 
 .projects {
-  position: relative;
-  .squiggle  {
-    height: 150px;
-    top: 60px;
+  h3 {
+    background: url('/assets/scribbles/purpleZigZag.png') center / contain no-repeat;
   }
   ul {
     margin: 10px auto;
@@ -130,13 +138,13 @@ nav {
       padding: 25px;
       &:hover {
         background: url('/assets/scribbles/purplePop.png') center / contain no-repeat;
-        font-weight: 300;
       }
     }
   }
 }
 
 .project {
+  position: relative;
   justify-content: space-between;
   margin: 90px 30px;
   &:last-of-type {
@@ -156,11 +164,12 @@ nav {
 }
 
 .worksInProgress {
+  // TODO: STRETCH GOAL: Put in a carousel that shows project info on hover
   justify-content: space-evenly;
   h3 {
-    padding: 25px;
     font-size: 4rem;
-    background: url(/assets/scribbles/pinkZigZag.png) center / contain no-repeat;
+    background: url('/assets/scribbles/orangeSquiggleTr.png') center / contain no-repeat;
+    padding: 20px;
   }
   p {
     text-align: center;
@@ -186,13 +195,9 @@ nav {
   }
   .contactInfo {
     position: relative;
-    h3 {
-      text-align: left;
-      margin-bottom: 20px;
-    }
     .squiggle {
-      height: 90px;
-      right: 100px;
+      height: 100px;
+      left: -90px;
       top: -20px;
     }
     p {
