@@ -19,7 +19,7 @@ nav {
       margin-top: -30px;
     }
     &:focus,
-    &hover {
+    &:hover {
       background: url(/assets/scribbles/orangeZigZag.png) center / contain
         no-repeat;
       &:first-of-type {
@@ -65,7 +65,7 @@ nav {
     padding: 20px 25px;
     background: url(/assets/scribbles/mustardBox.png) center / contain no-repeat;
     &:focus,
-    &hover {
+    &:hover {
       background: url(/assets/scribbles/mustardBoxHover.png) center / contain
         no-repeat;
     }
@@ -133,7 +133,7 @@ nav {
       width: 65px;
       padding: 10px;
       &:focus,
-      &hover {
+      &:hover {
         background: url("/assets/scribbles/orangeScribble.png") center / contain
           no-repeat;
       }
@@ -173,7 +173,7 @@ nav {
     a {
       padding: 25px;
       &:focus,
-      &hover {
+      &:hover {
         background: url("/assets/scribbles/purplePop.png") center / contain
           no-repeat;
       }
@@ -207,7 +207,7 @@ nav {
     text-decoration: underline;
     transition: ease-in-out 0.15s all;
     &:focus,
-    &hover {
+    &:hover {
       color: $kowhai;
     }
   }
@@ -282,7 +282,7 @@ nav {
       text-decoration: underline;
       transition: ease-in-out 0.15s all;
       &:focus,
-      &hover {
+      &:hover {
         color: $kowhai;
       }
     }
@@ -294,7 +294,7 @@ nav {
       margin-right: 10px;
       padding: 8px;
       &:focus,
-      &hover {
+      &:hover {
         background: url("/assets/scribbles/yellowPop.png") center / contain
           no-repeat;
       }
