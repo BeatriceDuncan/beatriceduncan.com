@@ -35,7 +35,6 @@ nav {
     }
   }
   .pageTop {
-    // TODO: STRETCH GOAL: make visible only when header is out of view
     font-size: 5rem;
     margin: 0px 20px;
   }
@@ -43,7 +42,6 @@ nav {
     font-size: 2.5rem;
   }
   @include pixels740MQ {
-    // TODO: Make the Hamburger nav
     display: none;
   }
 }
@@ -222,7 +220,6 @@ nav {
 }
 
 .worksInProgress {
-  // TODO: STRETCH GOAL: Put in a carousel that shows project info on hover
   justify-content: space-evenly;
   h3 {
     font-size: 4rem;
@@ -263,12 +260,10 @@ nav {
   max-width: 840px;
   margin: 0 auto;
   .contactImage {
-    // TODO: STRETCH GOAL: have in a carousel with collage of me as a kid
     width: 45%;
     max-width: 430px;
   }
   .contactInfo {
-    // TODO: STRETCH GOAL: once my domain has transferred I will set up a contact form
     position: relative;
     margin: 0 auto;
     .squiggle {

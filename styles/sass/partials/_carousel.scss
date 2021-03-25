@@ -21,6 +21,32 @@
 
 // TODO: STRETCH GOAL: Have a click & drag tab to change the background pattern but keep name & tagline fixed
 
+
+// vvv DIFFERENT OPTION TO REPLACE NAME & TAGLINE IMAGE FOR A11Y BEST PRAC vvv
+
+// ======== HTML ======== //
+// <div class="bannerText flex">
+//   <h1 class="flex">
+//     <span class="letterB">B</span>
+//     <span class="letterE1">e</span>
+//     <span class="letterA1">a</span>
+//     <span class="letterT">t</span>
+//     <span class="letterR">r</span>
+//     <span class="letterI">i</span>
+//     <span class="letterC">c</span>
+//     <span class="letterE2">e</span>
+//     <span class="space"></span>
+//     <span class="letterD">D</span>
+//     <span class="letterU">u</span>
+//     <span class="letterN1">n</span>
+//     <span class="letterC2">c</span>
+//     <span class="letterA2">a</span>
+//     <span class="letterN2">n</span>
+//   </h1>
+//   <h2>Front-End Web Developer</h2>
+// </div>
+
+
 // header {
 //   background: url(/assets/carouselPop.jpg) center / cover;
 //   height: 65vh;
