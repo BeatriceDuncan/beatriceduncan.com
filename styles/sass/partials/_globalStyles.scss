@@ -6,6 +6,21 @@ html {
     font-weight: 200;
     font-size: 3rem;
     cursor: default;
+    .skipToContent {
+      position: absolute;
+      left: -1000px;
+      top: 0;
+      z-index: 999;
+      background: white;
+      color: black;
+      font-weight: 300;
+      &:focus {
+        left: 5px;
+        top: 5px;
+        padding: 10px 20px;
+        background-color: $kowhai;
+      }
+    }
     .wrapper {
       max-width: 1200px;
       width: 70%;

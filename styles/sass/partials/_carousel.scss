@@ -1,25 +1,25 @@
 .carousel-content {
-    position: absolute;
-    top: 0;
-    margin: 0 auto;
-    z-index: 40;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  z-index: 40;
+}
+.fixed {
+  position: relative;
+  z-index: 50;
+}
+.carousel-content {
+  @include pixels740MQ {
+    height: 100vh;
+    max-height: 430px;
+    object-fit: cover;
   }
-  .fixed {
-    position: relative;
-    z-index: 50;
+  @include mobileMQ {
+    max-height: 260px;
   }
-  .carousel-content {
-    @include pixels740MQ {
-      height: 100vh;
-      max-height: 430px;
-      object-fit: cover;
-    }
-    @include mobileMQ {
-      max-height: 260px;
-    }
-  }
+}
 
-  // TODO: STRETCH GOAL: Have a click & drag tab to change the background pattern but keep name & tagline fixed
+// TODO: STRETCH GOAL: Have a click & drag tab to change the background pattern but keep name & tagline fixed
 
 // header {
 //   background: url(/assets/carouselPop.jpg) center / cover;

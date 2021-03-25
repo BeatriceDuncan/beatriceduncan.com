@@ -1,9 +1,9 @@
 // IMPORTS
-@import './partials/setup';
-@import './partials/variables';
-@import './partials/mixins';
-@import './partials/globalStyles';
-@import './partials/carousel';
+@import "./partials/setup";
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/globalStyles";
+@import "./partials/carousel";
 
 // HEADER STYLING
 
@@ -15,19 +15,22 @@ nav {
   li {
     margin: 0px 25px;
     padding: 15px;
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       margin-top: -30px;
     }
-    &:hover {
-      background: url(/assets/scribbles/orangeZigZag.png) center / contain no-repeat;
+    &:focus,
+    &hover {
+      background: url(/assets/scribbles/orangeZigZag.png) center / contain
+        no-repeat;
       &:first-of-type {
         transition: all ease-in-out 0.25;
         background: none;
         color: $whero;
         width: 40px;
       }
-      &:nth-of-type(even){
-        background: url(/assets/scribbles/orangeZigZag2.png) center / contain no-repeat;
+      &:nth-of-type(even) {
+        background: url(/assets/scribbles/orangeZigZag2.png) center / contain
+          no-repeat;
       }
     }
   }
@@ -63,8 +66,10 @@ nav {
     margin: 20px;
     padding: 20px 25px;
     background: url(/assets/scribbles/mustardBox.png) center / contain no-repeat;
-    &:hover {
-      background: url(/assets/scribbles/mustardBoxHover.png) center / contain no-repeat;
+    &:focus,
+    &hover {
+      background: url(/assets/scribbles/mustardBoxHover.png) center / contain
+        no-repeat;
     }
   }
   .aboutInfo {
@@ -77,7 +82,7 @@ nav {
   }
   .aboutHeading {
     position: relative;
-    .squiggle  {
+    .squiggle {
       height: 150px;
       left: -60px;
       top: -60px;
@@ -99,7 +104,8 @@ nav {
 
 .skills {
   h3 {
-    background: url('/assets/scribbles/blueZigZag.png') center / contain no-repeat;
+    background: url("/assets/scribbles/blueZigZag.png") center / contain
+      no-repeat;
   }
   .skillsGrid {
     width: 60vw;
@@ -128,8 +134,10 @@ nav {
       margin: 15px auto;
       width: 65px;
       padding: 10px;
-      &:hover {
-        background: url('/assets/scribbles/orangeScribble.png') center / contain no-repeat;
+      &:focus,
+      &hover {
+        background: url("/assets/scribbles/orangeScribble.png") center / contain
+          no-repeat;
       }
     }
     p {
@@ -143,7 +151,8 @@ nav {
 
 .projects {
   h3 {
-    background: url('/assets/scribbles/purpleZigZag.png') center / contain no-repeat;
+    background: url("/assets/scribbles/purpleZigZag.png") center / contain
+      no-repeat;
   }
   ul {
     margin: 10px auto;
@@ -165,8 +174,10 @@ nav {
     line-height: 1rem;
     a {
       padding: 25px;
-      &:hover {
-        background: url('/assets/scribbles/purplePop.png') center / contain no-repeat;
+      &:focus,
+      &hover {
+        background: url("/assets/scribbles/purplePop.png") center / contain
+          no-repeat;
       }
     }
   }
@@ -197,7 +208,8 @@ nav {
   .credits {
     text-decoration: underline;
     transition: ease-in-out 0.15s all;
-    &:hover {
+    &:focus,
+    &hover {
       color: $kowhai;
     }
   }
@@ -214,7 +226,8 @@ nav {
   justify-content: space-evenly;
   h3 {
     font-size: 4rem;
-    background: url('/assets/scribbles/orangeSquiggleTr.png') center / contain no-repeat;
+    background: url("/assets/scribbles/orangeSquiggleTr.png") center / contain
+      no-repeat;
     padding: 20px;
   }
   p {
@@ -255,6 +268,7 @@ nav {
     max-width: 430px;
   }
   .contactInfo {
+    // TODO: STRETCH GOAL: once my domain has transferred I will set up a contact form
     position: relative;
     margin: 0 auto;
     .squiggle {
@@ -272,7 +286,8 @@ nav {
     a {
       text-decoration: underline;
       transition: ease-in-out 0.15s all;
-      &:hover {
+      &:focus,
+      &hover {
         color: $kowhai;
       }
     }
@@ -283,8 +298,10 @@ nav {
     li {
       margin-right: 10px;
       padding: 8px;
-      &:hover {
-        background: url('/assets/scribbles/yellowPop.png') center / contain no-repeat;
+      &:focus,
+      &hover {
+        background: url("/assets/scribbles/yellowPop.png") center / contain
+          no-repeat;
       }
       img {
         width: 45px;

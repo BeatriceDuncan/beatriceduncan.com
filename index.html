@@ -20,14 +20,17 @@
     </style>
   </head>
   <body>
+    <a href="#skipToContent" class="skipToContent" tabindex="1"
+      >Skip to content</a
+    >
     <header id="home">
       <nav>
         <ul>
           <li><a class="pageTop" href="#home">^</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li tabindex="2"><a href="#about">About</a></li>
+          <li tabindex="3"><a href="#skills">Skills</a></li>
+          <li tabindex="4"><a href="#projects">Projects</a></li>
+          <li tabindex="5"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <!-- vvv DIFFERENT OPTION FOR NAME & A11Y BEST PRAC vvv-->
@@ -36,7 +39,7 @@
         <img
           class="carousel-content fixed"
           src="./assets/carouselName.png"
-          alt="Portfolio of Beatrice Duncan"
+          alt="Portfolio of Beatrice Duncan, front-end web developer."
         />
         <img
           class="carousel-content slide"
@@ -51,16 +54,21 @@
       </div>
     </header>
 
-    <main>
+    <main id="skipToContent">
       <div class="wrapper">
         <!-- ABOUT SECTION -->
-        <section class="about flex" id="about">
+        <section class="about flex" id="about" tabindex="6">
           <div class="aboutImage flex">
             <img
               src="./assets/myFace.jpg"
               alt="Childlike self portriat by Beatrice Duncan."
             />
-            <a href="assets/BeatriceDuncanResume.pdf" target="_blank">Résumé</a>
+            <a
+              href="assets/BeatriceDuncanResume.pdf"
+              target="_blank"
+              tabindex="7"
+              >Résumé</a
+            >
           </div>
           <div class="aboutInfo">
             <div class="aboutHeading">
@@ -72,17 +80,26 @@
               <h3>About Me</h3>
             </div>
             <p>
-              I'm a fresh front-end coding convert who has a New Zealand accent and lives in Toronto. I made my way into tech via almost a decade of elementary teaching experience & my various leadership roles in edutech. 
+              I'm a fresh front-end coding convert who has a New Zealand accent
+              and lives in Toronto. I made my way into tech via almost a decade
+              of elementary teaching experience & my various leadership roles in
+              edutech.
             </p>
             <p>
-              Between the permanent move across the Pacific and this exciting career pivot into tech, I have grit & tenacity pouring out of my pockets.
+              Between the permanent move across the Pacific and this exciting
+              career pivot into tech, I have grit & tenacity pouring out of my
+              pockets.
             </p>
-            <p>It's my passion for human connection and the empowerment of under-resourced communities that fuels me to build efficient and intuitive sites.</p>
+            <p>
+              It's my passion for human connection and the empowerment of
+              under-resourced communities that fuels me to build efficient and
+              intuitive sites.
+            </p>
           </div>
         </section>
 
         <!-- SKILLS SECTION -->
-        <section class="skills" id="skills">
+        <section class="skills" id="skills" tabindex="8">
           <h3>Skills</h3>
           <ul class="skillsGrid">
             <li class="skillBox">
@@ -190,9 +207,9 @@
           <!-- WriteOn -->
           <div class="project flex">
             <img
-            class="projectImage"
-            src="/assets/projects/writeOn.png"
-            alt="Mockup of the WriteOn app as displayed on a Macbook Air & an iPad."
+              class="projectImage"
+              src="/assets/projects/writeOn.png"
+              alt="Mockup of the WriteOn app as displayed on a Macbook Air & an iPad."
             />
             <div class="projectInfo flex">
               <h4>WriteOn</h4>
@@ -208,12 +225,14 @@
                   class="credits"
                   href="https://github.com/mortultra"
                   target="_blank"
+                  tabindex="11.1"
                   >Andrew Campbell</a
                 >,
                 <a
                   class="credits"
                   href="https://github.com/amybradford"
                   target="_blank"
+                  tabindex="11.2"
                   >Amy Bradford</a
                 >
                 &
@@ -221,6 +240,7 @@
                   class="credits"
                   href="https://github.com/gssanjose"
                   target="_blank"
+                  tabindex="11.3"
                   >Glen San Jose</a
                 >.
               </p>
@@ -245,9 +265,17 @@
                 </li>
               </ul>
               <p class="projectLinks flex">
-                <a href="https://write-on.netlify.app/" target="_blank">LIVE</a>
+                <a
+                  href="https://write-on.netlify.app/"
+                  target="_blank"
+                  tabindex="9"
+                  >LIVE</a
+                >
                 |
-                <a href="https://github.com/BeAnGlAm/WriteOn" target="_blank"
+                <a
+                  href="https://github.com/BeAnGlAm/WriteOn"
+                  target="_blank"
+                  tabindex="10"
                   >GIT</a
                 >
               </p>
@@ -286,13 +314,17 @@
                 </li>
               </ul>
               <p class="projectLinks flex">
-                <a href="https://littlewinsapp.netlify.app/" target="_blank"
+                <a
+                  href="https://littlewinsapp.netlify.app/"
+                  target="_blank"
+                  tabindex="11"
                   >LIVE</a
                 >
                 |
                 <a
                   href="https://github.com/BeatriceDuncan/littlewins"
                   target="_blank"
+                  tabindex="12"
                   >GIT</a
                 >
               </p>
@@ -322,6 +354,7 @@
                   class="credits"
                   href="https://codelikemike.dev"
                   target="_blank"
+                  tabindex="15.1"
                   >Michael Campbell</a
                 >.
               </p>
@@ -349,12 +382,14 @@
                 <a
                   href="https://beatriceduncan.github.io/mayTheForestBeWithYou"
                   target="_blank"
+                  tabindex="13"
                   >LIVE</a
                 >
                 |
                 <a
                   href="https://github.com/BeatriceDuncan/mayTheForestBeWithYou"
                   target="_blank"
+                  tabindex="14"
                   >GIT</a
                 >
               </p>
@@ -372,6 +407,7 @@
                   class="credits"
                   href="https://github.com/fthiesen"
                   target="_blank"
+                  tabindex="17.1"
                   >Fernanda Thiesen</a
                 >.
               </p>
@@ -399,12 +435,14 @@
                 <a
                   href="https://fernanda-bea.github.io/fernanda-beatrice-project-one/"
                   target="_blank"
+                  tabindex="15"
                   >LIVE</a
                 >
                 |
                 <a
                   href="https://github.com/fernanda-bea/fernanda-beatrice-project-one"
                   target="_blank"
+                  tabindex="16"
                   >GIT</a
                 >
               </p>
@@ -465,7 +503,8 @@
               />
               <h5>Monster Squad</h5>
               <p>
-                This app uses jQuery to traverse the D&D API and filter Monsters by challenge rating.
+                This app uses jQuery to traverse the D&D API and filter Monsters
+                by challenge rating.
               </p>
               <ul class="flex">
                 <li class="projectSkill">
@@ -488,11 +527,19 @@
                 </li>
               </ul>
               <p class="projectLinks">
-                <a href="https://beatriceduncan.github.io/monsterSquad/"
-                  target="_blank">LIVE</a>
+                <a
+                  href="https://beatriceduncan.github.io/monsterSquad/"
+                  target="_blank"
+                  tabindex="17"
+                  >LIVE</a
+                >
                 |
-                <a href="https://github.com/BeatriceDuncan/monsterSquad"
-                  target="_blank">GIT</a>
+                <a
+                  href="https://github.com/BeatriceDuncan/monsterSquad"
+                  target="_blank"
+                  tabindex="18"
+                  >GIT</a
+                >
               </p>
             </div>
             <!-- Thought That Counts -->
@@ -503,7 +550,8 @@
               />
               <h5>Thought That Counts</h5>
               <p>
-                This app uses a simple jQuery onClick toggle to help users keep track of gift ideas.
+                This app uses a simple jQuery onClick toggle to help users keep
+                track of gift ideas.
               </p>
               <ul class="flex">
                 <li class="projectSkill">
@@ -526,35 +574,46 @@
                 </li>
               </ul>
               <p class="projectLinks">
-                <a href="https://beatriceduncan.github.io/thoughtThatCounts"
-                  target="_blank">LIVE</a>
+                <a
+                  href="https://beatriceduncan.github.io/thoughtThatCounts"
+                  target="_blank"
+                  tabindex="19"
+                  >LIVE</a
+                >
                 |
-                <a href="https://github.com/BeatriceDuncan/thoughtThatCounts"
-                  target="_blank">GIT</a>
+                <a
+                  href="https://github.com/BeatriceDuncan/thoughtThatCounts"
+                  target="_blank"
+                  tabindex="20"
+                  >GIT</a
+                >
               </p>
             </div>
           </div>
         </section>
 
         <!-- CONTACT SECTION -->
-        <section class="contact flex" id="contact">
+        <section class="contact flex" id="contact" tabindex="21">
           <img
-          class="contactImage"
-          src="./assets/bigMe.png"
-          alt="Collage self portrait of Beatrice Duncan working in her home-office."
+            class="contactImage"
+            src="./assets/bigMe.png"
+            alt="Collage self portrait of Beatrice Duncan working in her home-office."
           />
           <div class="contactInfo">
             <img
-                class="squiggle"
-                src="/assets/scribbles/plumScribble.png"
-                aria-hidden="true"
-              />
+              class="squiggle"
+              src="/assets/scribbles/plumScribble.png"
+              aria-hidden="true"
+            />
             <h3>Contact</h3>
             <p>Feeling curious about something?</p>
             <p>Think I might be a good fit for a position?</p>
             <p>I would love to talk with you.</p>
             <p>
-              <a href="mailto:hello@beatriceduncan.com" target="_blank"
+              <a
+                href="mailto:hello@beatriceduncan.com"
+                target="_blank"
+                tabindex="22"
                 >hello@beatriceduncan.com</a
               >
             </p>
@@ -568,7 +627,7 @@
               <button>Send</button>
             </form> -->
             <ul class="contactLinks flex">
-              <li>
+              <li tabindex="23">
                 <a
                   class="contactIcon"
                   href="https://calendly.com/beatriceduncan"
@@ -576,20 +635,23 @@
                 >
                   <img
                     src="/assets/icons/calendarIcon.png"
-                    aria-hidden="true"
+                    alt="Make an appointment with Beatrice via Calendly in a new tab."
                   />
                 </a>
               </li>
-              <li>
+              <li tabindex="24">
                 <a
                   class="contactIcon"
                   href="http://github.com/BeatriceDuncan"
                   target="_blank"
                 >
-                  <img src="/assets/icons/gitIcon.png" aria-hidden="true" />
+                  <img
+                    src="/assets/icons/gitIcon.png"
+                    alt="Open Beatrice's GitHub Profile in a new tab."
+                  />
                 </a>
               </li>
-              <li>
+              <li tabindex="25">
                 <a
                   class="contactIcon"
                   href="http://linkedin.com/in/beatriceduncan/"
@@ -597,17 +659,20 @@
                 >
                   <img
                     src="/assets/icons/linkedInIcon.png"
-                    aria-hidden="true"
+                    alt="See Beatrice's Linked-in profile in a new tab."
                   />
                 </a>
               </li>
-              <li>
+              <li tabindex="26">
                 <a
                   class="contactIcon"
                   href="https://secure.plum.io/p/dIWUbnhlhIqKib2ldhhnhg"
                   target="_blank"
                 >
-                  <img src="./assets/icons/plumIcon.png" aria-hidden="true" />
+                  <img
+                    src="./assets/icons/plumIcon.png"
+                    alt="See Beatrice's Plum profile in a new tab."
+                  />
                 </a>
               </li>
             </ul>
@@ -617,7 +682,7 @@
       <!-- END OF WRAPPER -->
     </main>
 
-    <footer>
+    <footer tabindex="27">
       <img src="/assets/name.jpg" alt="Made by Beatrice Duncan" />
       <p>© 2021</p>
     </footer>

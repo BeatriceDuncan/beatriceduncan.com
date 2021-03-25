@@ -225,6 +225,23 @@ html body {
   cursor: default;
 }
 
+html body .skipToContent {
+  position: absolute;
+  left: -1000px;
+  top: 0;
+  z-index: 999;
+  background: white;
+  color: black;
+  font-weight: 300;
+}
+
+html body .skipToContent:focus {
+  left: 5px;
+  top: 5px;
+  padding: 10px 20px;
+  background-color: #E1AD01;
+}
+
 html body .wrapper {
   max-width: 1200px;
   width: 70%;
@@ -345,11 +362,11 @@ nav li:nth-of-type(2) {
   margin-top: -30px;
 }
 
-nav li:hover {
+nav li:focus, nav lihover {
   background: url(/assets/scribbles/orangeZigZag.png) center/contain no-repeat;
 }
 
-nav li:hover:first-of-type {
+nav li:focus:first-of-type, nav lihover:first-of-type {
   -webkit-transition: all ease-in-out 0.25;
   transition: all ease-in-out 0.25;
   background: none;
@@ -357,7 +374,7 @@ nav li:hover:first-of-type {
   width: 40px;
 }
 
-nav li:hover:nth-of-type(even) {
+nav li:focus:nth-of-type(even), nav lihover:nth-of-type(even) {
   background: url(/assets/scribbles/orangeZigZag2.png) center/contain no-repeat;
 }
 
@@ -406,7 +423,7 @@ nav .pageTop {
   background: url(/assets/scribbles/mustardBox.png) center/contain no-repeat;
 }
 
-.about a:hover {
+.about a:focus, .about ahover {
   background: url(/assets/scribbles/mustardBoxHover.png) center/contain no-repeat;
 }
 
@@ -496,7 +513,7 @@ nav .pageTop {
   padding: 10px;
 }
 
-.skills .skillsGrid .skillsIcon:hover {
+.skills .skillsGrid .skillsIcon:focus, .skills .skillsGrid .skillsIconhover {
   background: url("/assets/scribbles/orangeScribble.png") center/contain no-repeat;
 }
 
@@ -541,7 +558,7 @@ nav .pageTop {
   padding: 25px;
 }
 
-.projects .projectLinks a:hover {
+.projects .projectLinks a:focus, .projects .projectLinks ahover {
   background: url("/assets/scribbles/purplePop.png") center/contain no-repeat;
 }
 
@@ -585,7 +602,7 @@ nav .pageTop {
   transition: ease-in-out 0.15s all;
 }
 
-.project .credits:hover {
+.project .credits:focus, .project .creditshover {
   color: #E1AD01;
 }
 
@@ -693,7 +710,7 @@ nav .pageTop {
   transition: ease-in-out 0.15s all;
 }
 
-.contact .contactInfo a:hover {
+.contact .contactInfo a:focus, .contact .contactInfo ahover {
   color: #E1AD01;
 }
 
@@ -709,7 +726,7 @@ nav .pageTop {
   padding: 8px;
 }
 
-.contact .contactLinks li:hover {
+.contact .contactLinks li:focus, .contact .contactLinks lihover {
   background: url("/assets/scribbles/yellowPop.png") center/contain no-repeat;
 }
 
