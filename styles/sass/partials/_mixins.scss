@@ -1,0 +1,35 @@
+@mixin laptopMQ {
+  @media (max-width:1334px) {
+    @content;
+  }
+}
+
+@mixin tabletLandscapeMQ {
+  @media (max-width:1024px) {
+    @content;
+  }
+}
+
+@mixin pixels960MQ {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin pixels840MQ {
+  @media (max-width: 840px) {
+    @content;
+  }
+}
+
+@mixin pixels740MQ {
+  @media (max-width: 740px) {
+    @content;
+  }
+}
+
+@mixin mobileMQ {
+  @media (max-width:435px) {
+    @content;
+  }
+}

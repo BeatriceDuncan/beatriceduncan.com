@@ -8,6 +8,16 @@
     position: relative;
     z-index: 50;
   }
+  .carousel-content {
+    @include pixels740MQ {
+      height: 100vh;
+      max-height: 430px;
+      object-fit: cover;
+    }
+    @include mobileMQ {
+      max-height: 260px;
+    }
+  }
 
   // TODO: STRETCH GOAL: Have a click & drag tab to change the background pattern but keep name & tagline fixed
 

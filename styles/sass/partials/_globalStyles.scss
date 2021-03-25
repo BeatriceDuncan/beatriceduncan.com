@@ -10,6 +10,9 @@ html {
       max-width: 1200px;
       width: 70%;
       margin: 0 auto;
+      @include pixels740MQ {
+        width: 100%;
+      }
     }
     .flex {
       display: flex;

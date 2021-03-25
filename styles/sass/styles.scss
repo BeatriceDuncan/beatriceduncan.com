@@ -36,22 +36,28 @@ nav {
     font-size: 5rem;
     margin: 0px 20px;
   }
-  // TODO: STRETCH GOAL: random colour scribble as you scroll past / different stripe on hover?
+  @include pixels960MQ {
+    font-size: 2.5rem;
+  }
+  @include pixels740MQ {
+    // TODO: Make the Hamburger nav
+    display: none;
+  }
 }
 
 // MAIN STYLING
 
-.about h3,
-.contact h3 {
-  text-align: left;
-}
-
 .about {
   justify-content: space-evenly;
-  height: 80vh;
   .aboutImage {
     justify-content: space-evenly;
     width: 35%;
+    @include pixels840MQ {
+      width: 50%;
+      a {
+        margin: unset;
+      }
+    }
   }
   a {
     margin: 20px;
@@ -59,12 +65,15 @@ nav {
     background: url(/assets/scribbles/mustardBox.png) center / contain no-repeat;
     &:hover {
       background: url(/assets/scribbles/mustardBoxHover.png) center / contain no-repeat;
-      // color: $kowhai;
     }
   }
   .aboutInfo {
     width: 50%;
     max-width: 375px;
+    @include pixels840MQ {
+      width: 80%;
+      max-width: unset;
+    }
   }
   .aboutHeading {
     position: relative;
@@ -73,6 +82,18 @@ nav {
       left: -60px;
       top: -60px;
     }
+  }
+}
+
+.about h3,
+.contact h3 {
+  text-align: left;
+}
+
+.about,
+.aboutImage {
+  @include pixels840MQ {
+    flex-direction: column-reverse;
   }
 }
 
@@ -90,6 +111,14 @@ nav {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 30px 30px;
     align-items: center;
+    @include pixels840MQ {
+      min-width: unset;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    @include mobileMQ {
+      width: 85vw;
+    }
     .skillsBox {
       padding: 20px 0 0 0;
       font-size: 1.4rem;
@@ -141,24 +170,41 @@ nav {
       }
     }
   }
+  .projectImage,
+  .projectInfo {
+    width: calc(50% - 25px);
+    @include tabletLandscapeMQ {
+      width: 80%;
+    }
+  }
+  .projectImage {
+    @include pixels840MQ {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .project {
   position: relative;
   justify-content: space-between;
   margin: 90px 30px;
+  &:first-of-type {
+    margin: 40px 30px 40px 30px;
+  }
   &:last-of-type {
     margin: 90px 30px 40px 30px;
-  }
-  .projectImage,
-  .projectInfo {
-    width: calc(50% - 25px);
   }
   .credits {
     text-decoration: underline;
     transition: ease-in-out 0.15s all;
     &:hover {
       color: $kowhai;
+    }
+  }
+  @include tabletLandscapeMQ {
+    flex-direction: column;
+    &:nth-last-of-type(even) {
+      flex-direction: column-reverse;
     }
   }
 }
@@ -185,16 +231,32 @@ nav {
       text-align: center;
       margin-top: 25px;
     }
+    @include pixels840MQ {
+      width: 70%;
+    }
+  }
+}
+
+.worksInProgress,
+.contact {
+  @include pixels840MQ {
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
 .contact {
   margin-bottom: 50px;
+  max-width: 840px;
+  margin: 0 auto;
   .contactImage {
+    // TODO: STRETCH GOAL: have in a carousel with collage of me as a kid
     width: 45%;
+    max-width: 430px;
   }
   .contactInfo {
     position: relative;
+    margin: 0 auto;
     .squiggle {
       height: 100px;
       left: -90px;
@@ -203,6 +265,9 @@ nav {
     p {
       line-height: 1rem;
       padding: 15px 0;
+      @include mobileMQ {
+        line-height: 2.5rem;
+      }
     }
     a {
       text-decoration: underline;
@@ -225,6 +290,29 @@ nav {
         width: 45px;
         padding: 5px;
       }
+    }
+  }
+  @include pixels840MQ {
+    padding-top: 40px;
+    h3 {
+      text-align: center;
+    }
+    .squiggle {
+      right: -80px;
+    }
+    .contactImage {
+      margin-bottom: 70px;
+    }
+    .contactImage,
+    .contactInfo {
+      width: 70%;
+      text-align: center;
+    }
+    .contactLinks {
+      justify-content: center;
+    }
+    li {
+      margin: unset;
     }
   }
 }
