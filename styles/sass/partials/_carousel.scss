@@ -1,15 +1,15 @@
 .carousel-content {
+  height: 90vh;
+  object-fit: cover;
   position: absolute;
-  top: 0;
+  top: 10vh;
   margin: 0 auto;
   z-index: 40;
-}
-.fixed {
-  position: relative;
-  z-index: 50;
-}
-.carousel-content {
+  @include pixels960MQ {
+    height: 50vh;
+  }
   @include pixels740MQ {
+    top: 0;
     height: 100vh;
     max-height: 430px;
     object-fit: cover;
@@ -17,6 +17,10 @@
   @include mobileMQ {
     max-height: 260px;
   }
+}
+.fixed {
+  position: relative;
+  z-index: 50;
 }
 
 // TODO: STRETCH GOAL: Have a click & drag tab to change the background pattern but keep name & tagline fixed
