@@ -251,6 +251,7 @@ html body .wrapper {
 @media (max-width: 740px) {
   html body .wrapper {
     width: 100%;
+    overflow-x: hidden;
   }
 }
 
