@@ -55,7 +55,7 @@ nav {
 
 .about {
   justify-content: space-evenly;
-  padding-top: 250px;
+  padding-top: 180px;
   .aboutImage {
     justify-content: space-evenly;
     width: 35%;
@@ -209,14 +209,6 @@ nav {
   &:last-of-type {
     margin: 90px 30px 40px 30px;
   }
-  .credits {
-    text-decoration: underline;
-    transition: ease-in-out 0.15s all;
-    &:focus,
-    &:hover {
-      color: $kowhai;
-    }
-  }
   @include tabletLandscapeMQ {
     flex-direction: column;
     &:nth-last-of-type(even) {
@@ -251,6 +243,14 @@ nav {
       width: 70%;
     }
   }
+  .alwaysLearning {
+    h3 {
+      background: url("/assets/scribbles/pinkZigZag.png") center / contain
+        no-repeat;
+        margin-top: 40px;
+      padding: 15px;
+    }
+  }
 }
 
 .worksInProgress,
@@ -280,14 +280,6 @@ nav {
       padding: 15px 0;
       @include mobileMQ {
         line-height: 2.5rem;
-      }
-    }
-    a {
-      text-decoration: underline;
-      transition: ease-in-out 0.15s all;
-      &:focus,
-      &:hover {
-        color: $kowhai;
       }
     }
   }

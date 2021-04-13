@@ -27,6 +27,7 @@ html {
       margin: 0 auto;
       @include pixels740MQ {
         width: 100%;
+        overflow-x: hidden;
       }
     }
     .flex {
@@ -42,6 +43,16 @@ html {
     a {
       text-decoration: none;
       color: inherit;
+    }
+    .credits,
+    .alwaysLearning a,
+    .contactInfo a {
+      text-decoration: underline;
+      transition: ease-in-out 0.15s all;
+      &:focus,
+      &:hover {
+        color: $kowhai;
+      }
     }
     img {
       object-position: center;

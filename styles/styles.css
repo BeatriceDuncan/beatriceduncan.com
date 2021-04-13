@@ -251,6 +251,7 @@ html body .wrapper {
 @media (max-width: 740px) {
   html body .wrapper {
     width: 100%;
+    overflow-x: hidden;
   }
 }
 
@@ -274,6 +275,22 @@ html body p {
 html body a {
   text-decoration: none;
   color: inherit;
+}
+
+html body .credits,
+html body .alwaysLearning a,
+html body .contactInfo a {
+  text-decoration: underline;
+  -webkit-transition: ease-in-out 0.15s all;
+  transition: ease-in-out 0.15s all;
+}
+
+html body .credits:focus, html body .credits:hover,
+html body .alwaysLearning a:focus,
+html body .alwaysLearning a:hover,
+html body .contactInfo a:focus,
+html body .contactInfo a:hover {
+  color: #E1AD01;
 }
 
 html body img {
@@ -415,7 +432,7 @@ nav ul .pageTop:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-top: 250px;
+  padding-top: 180px;
 }
 
 .about .aboutImage {
@@ -613,16 +630,6 @@ nav ul .pageTop:hover {
   margin: 90px 30px 40px 30px;
 }
 
-.project .credits {
-  text-decoration: underline;
-  -webkit-transition: ease-in-out 0.15s all;
-  transition: ease-in-out 0.15s all;
-}
-
-.project .credits:focus, .project .credits:hover {
-  color: #E1AD01;
-}
-
 @media (max-width: 1024px) {
   .project {
     -webkit-box-orient: vertical;
@@ -675,6 +682,12 @@ nav ul .pageTop:hover {
   }
 }
 
+.worksInProgress .alwaysLearning h3 {
+  background: url("/assets/scribbles/pinkZigZag.png") center/contain no-repeat;
+  margin-top: 40px;
+  padding: 15px;
+}
+
 @media (max-width: 840px) {
   .worksInProgress,
   .contact {
@@ -717,16 +730,6 @@ nav ul .pageTop:hover {
   .contact .contactInfo p {
     line-height: 2.5rem;
   }
-}
-
-.contact .contactInfo a {
-  text-decoration: underline;
-  -webkit-transition: ease-in-out 0.15s all;
-  transition: ease-in-out 0.15s all;
-}
-
-.contact .contactInfo a:focus, .contact .contactInfo a:hover {
-  color: #E1AD01;
 }
 
 .contact .contactLinks {
