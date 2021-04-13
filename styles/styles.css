@@ -530,7 +530,8 @@ nav ul .pageTop:hover {
 
 @media (max-width: 435px) {
   .skills .skillsGrid {
-    max-width: 85vw;
+    width: 80vw;
+    margin-left: 20px;
   }
 }
 
@@ -753,8 +754,9 @@ nav ul .pageTop:hover {
 }
 
 @media (max-width: 435px) {
-  .contact .contactLinks li img {
-    width: 35px;
+  .contact .contactLinks li {
+    padding: 4px;
+    margin: 3px;
   }
 }
 

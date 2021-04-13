@@ -127,7 +127,8 @@ nav {
       grid-template-rows: 1fr 1fr 1fr 1fr;
     }
     @include mobileMQ {
-      max-width: 85vw;
+      width: 80vw;
+      margin-left: 20px;
     }
     .skillsBox {
       padding: 20px 0 0 0;
@@ -297,9 +298,10 @@ nav {
       img {
         width: 45px;
         padding: 5px;
-        @include mobileMQ {
-          width: 35px;
-        }
+      }
+      @include mobileMQ {
+        padding: 4px;
+        margin: 3px;
       }
     }
   }
