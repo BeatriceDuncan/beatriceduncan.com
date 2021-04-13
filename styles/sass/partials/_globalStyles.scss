@@ -27,7 +27,6 @@ html {
       margin: 0 auto;
       @include pixels740MQ {
         width: 100%;
-        overflow-x: hidden;
       }
     }
     .flex {

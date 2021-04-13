@@ -251,7 +251,6 @@ html body .wrapper {
 @media (max-width: 740px) {
   html body .wrapper {
     width: 100%;
-    overflow-x: hidden;
   }
 }
 
@@ -531,7 +530,7 @@ nav ul .pageTop:hover {
 
 @media (max-width: 435px) {
   .skills .skillsGrid {
-    width: 85vw;
+    max-width: 85vw;
   }
 }
 
@@ -751,6 +750,12 @@ nav ul .pageTop:hover {
 .contact .contactLinks li img {
   width: 45px;
   padding: 5px;
+}
+
+@media (max-width: 435px) {
+  .contact .contactLinks li img {
+    width: 35px;
+  }
 }
 
 @media (max-width: 840px) {
